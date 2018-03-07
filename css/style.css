@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200|Playfair+Display:700');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************/
+/***   Base   ***/
+/****************/
+body{
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
+	max-width: 768px;
+	margin:0 auto;
+	background-color: #f8f6f4;
+	font-weight: 200;
+	text-align: center;
+}
+h1,h2{
+	font-family: "Playfair Display", "Georgia", "Times", serif;
+	font-weight: bold;
+}
+h1{
+	font-size: 3.75em; /* 60px / 16px -> 3.75em */
+	color:#c0a064;
+	margin-bottom: 0.5em;
+	line-height: 1.5;
+}
+h2{
+	font-size: 2.25em; /* 36 px / 16px ->  2.25em */
+}
+.bw h2, .mother h2, .portraits h2{
+	margin-top: 1em;
+}
+.recent h2{
+	margin-bottom:1.66666667em;
+}
+.hidden{
+	text-indent: -9999px;
+	outline: 0;
+	position: absolute;
+}
+.desc{
+	line-height: 1.625;
+	max-width: 450px;
+	margin: 2.5em auto 3.75em;
+}
+.more, .discover{
+  color: #c0a064;
+  border: 2px solid #c0a064;
+  font-size:1.125em; /* 18px */
+  padding: 1em 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/********************/
+/***   Sections   ***/
+/********************/
+.contact, .bw, .portraits, .mother, footer{
+	background-color: white;
+}
+section{
+	padding-top: 7.5em;
+}
+.portraits, .recent{
+	padding-bottom: 7.5em;
+}
+/******************/
+/***   Header   ***/
+/******************/
+header{
+	background: linear-gradient(rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url("../img/main-bg.jpg");
+	background-size: 200%;
+	background-position: center 40%;
+	padding: 23.875em 0 22.5em; /* 320px 0 360px */
+}
+.tagline{
+  color: #6c6a68;
+  font-size: 1.5em; /*24px*/
+  margin-bottom: 5em; /**/
+}
+/*******************/
+/***   Contact   ***/
+/*******************/
+.contact{
+	padding-bottom: 3.75em;
+}
+form{
+	margin-top: 2.5em;
+}
+input, textarea{
+	font:inherit;
+	display: block;
+	width: 20.625em; /* 330px */
+	margin: 0 auto;
+	border: 1px solid black;
+	padding:1.25em;
+	background-color: transparent;
+}
+[type="email"]{
+	border-top:0;
+	border-bottom:0;
+}
+[type="submit"]{
+	box-sizing: content-box;
+	margin-top:1.25em;
+	color: #c0a064;
+	border: 2px solid #c0a064;
+	text-transform: uppercase;
+}
+/******************/
+/***   Footer   ***/
+/******************/
+footer{
+	padding-bottom: 5em;
+}
+footer a{
+	display: inline-block;
+	height: 1em;
+}
+footer a+a{
+	margin-left: 2em;
+}
+footer img{
+	display: block;
+	width: 1em;
+	height: 1em;
+}
+footer p{
+	margin-bottom: 1.875em;
+}
